@@ -53,3 +53,5 @@ The application was version-controlled using **Git**, and finally deployed using
 ---
 
 ## Output
+
+![Image](https://github.com/user-attachments/assets/a97f10eb-2548-4dd2-b5b4-c8b39fe12192)
