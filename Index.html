@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Interactive Quiz</h1>
+        
+        <div class="category-selector" id="categorySelector">
+            <label for="quizCategory"><b>Select a category:</b> </label>
+            <select id="quizCategory">
+                <option value="general">General Knowledge</option>
+                <option value="science">Science</option>
+                <option value="history">History</option>
+                <option value="programming">Programming</option>
+            </select>
+            <button id="startQuizBtn">Start Quiz</button>
+        </div>
+        
+        <div id="quizContent" style="display: none;">
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div class="progress" id="progressBar"></div>
+                </div>
+                <div class="progress-text" id="progressText">Question 1 of 10</div>
+            </div>
+            
+            <div id="questionContainer"></div>
+            
+            <div class="navigation">
+                <button class="prev-btn" id="prevBtn" disabled>Previous</button>
+                <button class="next-btn" id="nextBtn">Next</button>
+                <button class="submit-btn" id="submitBtn" style="display: none;">Submit Quiz</button>
+            </div>
+        </div>
+        
+        <div class="results-container" id="resultsContainer">
+            <h2>Quiz Completed!</h2>
+            <div class="score" id="finalScore">Score: 0/10</div>
+            <p id="resultMessage"></p>
+            <button class="restart-btn" id="restartBtn">Take Another Quiz</button>
+        </div>
+    </div>
+
+    <script src="quiz-data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
